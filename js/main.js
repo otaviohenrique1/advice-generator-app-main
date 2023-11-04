@@ -25,8 +25,3 @@ if (id === "" && advice === "") {
 slip_dice.addEventListener("click", () => {
   logMovies();
 })
-
-// const teste = { slip: { id: 222, advice: "Respect other people's opinions, even when they differ from your own." } }
-
-// slipId.innerHTML = teste.slip.id;
-// slip_advice.innerHTML = teste.slip.advice;
