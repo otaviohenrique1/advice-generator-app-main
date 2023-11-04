@@ -13,54 +13,68 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: var(--dark-blue);
+  font-family: 'Manrope', sans-serif;
 }
 
 .slip {
   width: 500px;
-  height: 300px;
+  height: auto;
   background-color: var(--dark-grayish-blue);
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem;
+  padding: 2rem 2rem 4rem 2rem;
   box-sizing: border-box;
   border-radius: 1rem;
   position: relative;
 }
 
 .slip__id {
-  font-size: 1.25rem;
+  color: var(--neon-green);
 }
 
 .slip__advice {
   font-size: 28px;
   text-align: center;
+  color: var(--light-cyan);
+  font-weight: 800;
 }
 
 .slip__pattern-divider {
   width: 100%;
+  background-image: url("../images/pattern-divider-desktop.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20px;
 }
 
 .slip__dice {
-  position: absolute;
-  bottom: -25px;
-  width: 3rem;
-  height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  bottom: -30px;
+  width: 4rem;
+  height: 4rem;
   border-radius: 100px;
   border: 0;
+  cursor: pointer;
+  background-color: var(--neon-green);
 }
 
 @media screen and (max-width: 600px) {
-  body {
+  /* body {
     align-items: start;
   }
 
   .slip {
     margin-top: 10%;
-  }
+  } */
+
+  .slip__pattern-divider {
+    background-image: url("../images/pattern-divider-mobile.svg");
+  }  
 }

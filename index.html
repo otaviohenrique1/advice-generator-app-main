@@ -7,6 +7,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Advice generator app</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/styles.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -19,8 +24,8 @@
   <main class="slip">
     <p class="slip__id">Advice # <span id="slip_id"></span></p>
     <p class="slip__advice">"<span id="slip_advice"></span>"</p>
-    <img src="images/pattern-divider-desktop.svg" alt="pattern divider desktop" class="slip__pattern-divider">
-    <button class="slip__dice">
+    <div class="slip__pattern-divider"></div>
+    <button class="slip__dice" id="slip_dice">
       <img src="images/icon-dice.svg" alt="dice">
     </button>
   </main>
