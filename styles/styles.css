@@ -7,22 +7,29 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100vw;
   height: 100vh;
   background-color: var(--dark-blue);
   font-family: 'Manrope', sans-serif;
 }
 
+.display-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
 .slip {
   width: 500px;
   height: auto;
   background-color: var(--dark-grayish-blue);
-  display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-direction: column;
   gap: 2rem;
   padding: 2rem 2rem 4rem 2rem;
@@ -52,9 +59,6 @@ body {
 }
 
 .slip__dice {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   bottom: -30px;
   width: 4rem;
@@ -66,14 +70,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  /* body {
-    align-items: start;
-  }
-
-  .slip {
-    margin-top: 10%;
-  } */
-
   .slip__pattern-divider {
     background-image: url("../images/pattern-divider-mobile.svg");
   }  
